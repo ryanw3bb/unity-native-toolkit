@@ -1,0 +1,34 @@
+# osx
+.DS_Store
+profile
+
+# folders
+obj/
+bin/
+Library/
+Temp/
+ProjectSettings/
+UnityPackageManager/
+Assets/HQDemo/
+.vs/
+Resources/
+Packages/
+
+# file extensions
+*.csproj
+*.userprefs
+*.sln
+*.meta
+*.pidb
+*.unityproj
+
+# Android Studio
+*.iml
+.idea
+.idea/workspace.xml
+.gradle
+build/
+.navigation
+captures/
+output.json
+local.properties
