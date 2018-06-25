@@ -13,3 +13,6 @@ Easily integrate native iOS & Android functionality into Unity projects using ve
 
 Detailed API documentation can be found here:
 http://secondfury.com/nativetoolkit/
+
+Android source located in Android/app/src/main/java/
+iOS source located in Unity/Assets/Plugins/iOS/
