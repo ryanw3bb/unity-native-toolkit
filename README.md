@@ -1,6 +1,5 @@
 # Native Toolkit
-Easily integrate native iOS/Android functionality into Unity using very little code.
-Included functionality:
+Easily integrate native iOS & Android functionality into Unity projects using very little code.
 * Pick images from camera roll
 * Use device camera to take an image
 * Save image to gallery
