@@ -15,9 +15,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+
+    task copyAAR(type: Copy) {
+        from 'build/outputs/aar'
+        into '../../Unity/Assets/Plugins/Android'
+        include 'app-release.aar'
+        rename 'app-release.aar', 'native-toolkit.aar'
+    }
+
+    afterEvaluate {
+        build.finalizedBy(copyAAR)
+    }
 }
 
 dependencies {
-    provided 'com.android.support:support-v4:21.0.3'
-    provided files('libs/classes.jar')
+    compileOnly 'com.android.support:support-v4:21.0.3'
+    compileOnly files('libs/classes.jar')
 }
