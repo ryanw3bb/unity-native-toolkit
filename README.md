@@ -12,6 +12,7 @@ Easily integrate native iOS & Android functionality into Unity projects.
 * GPS data
 
 ## Usage
+Add the files contained in Unity/Assets/ to your project then call the required static function from your code. For instance:
 ```csharp
 public void OnSaveScreenshotPress()
 {
@@ -23,5 +24,5 @@ public void OnSaveScreenshotPress()
 Detailed API documentation can be found here:
 http://secondfury.com/nativetoolkit/
 
-Android source located in Android/app/src/main/java/  
-iOS source located in Unity/Assets/Plugins/iOS/
+Android (Java) source located in Android/app/src/main/java/  
+iOS (Obj-C) source located in Unity/Assets/Plugins/iOS/
