@@ -11,6 +11,14 @@ Easily integrate native iOS & Android functionality into Unity projects.
 * Local notifications
 * GPS data
 
+## Example
+```csharp
+public void OnSaveScreenshotPress()
+{
+	NativeToolkit.SaveScreenshot("MyScreenshot", "MyScreenshotFolder", "jpeg");
+}
+```
+
 Detailed API documentation can be found here:
 http://secondfury.com/nativetoolkit/
 
