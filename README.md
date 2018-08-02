@@ -11,7 +11,7 @@ Easily integrate native iOS & Android functionality into Unity projects.
 * Local notifications
 * GPS data
 
-## Example
+## Usage
 ```csharp
 public void OnSaveScreenshotPress()
 {
@@ -19,6 +19,7 @@ public void OnSaveScreenshotPress()
 }
 ```
 
+## Documentation
 Detailed API documentation can be found here:
 http://secondfury.com/nativetoolkit/
 
