@@ -301,23 +301,10 @@ public class NativeToolkit : MonoBehaviour {
 	
 	public void OnPickImage(string path)
 	{
-		StartCoroutine (LoadPickImage (path));
-	}
-	
-	IEnumerator LoadPickImage(string path)
-	{
-		#if UNITY_WINRT
+        Texture2D texture = LoadImageFromFile(path);
 
-		yield return new WaitForEndOfFrame ();
-
-		#endif
-
-		Texture2D texture = LoadImageFromFile(path);
-		
-		if(OnImagePicked != null) 
-			OnImagePicked(texture, path);
-
-		yield return 0;
+        if(OnImagePicked != null)
+            OnImagePicked(texture, path);
 	}
 
 
@@ -344,23 +331,10 @@ public class NativeToolkit : MonoBehaviour {
 
 	public void OnCameraFinished(string path)
 	{
-		StartCoroutine (LoadCameraImage (path));
-	}
+        Texture2D texture = LoadImageFromFile(path);
 
-	IEnumerator LoadCameraImage(string path)
-	{
-		#if UNITY_WINRT
-		
-		yield return new WaitForEndOfFrame ();
-		
-		#endif
-
-		Texture2D texture = LoadImageFromFile(path);
-
-		if(OnCameraShotComplete != null) 
-			OnCameraShotComplete(texture, path);
-
-		yield return 0;
+        if(OnCameraShotComplete != null)
+            OnCameraShotComplete(texture, path);
 	}
 
 
@@ -518,22 +492,7 @@ public class NativeToolkit : MonoBehaviour {
 
 	public static bool StartLocation()
 	{
-		#if UNITY_WINRT
-
-		if(NativeToolkitWP8.Main.StartLocation())
-		{
-			Debug.Log ("Start location service");
-			return true;
-		}
-		else
-		{
-			Debug.Log ("Location service disabled");
-			return false;
-		}
-
-		#else
-
-		if (!Input.location.isEnabledByUser)
+		if(!Input.location.isEnabledByUser)
 		{
 			Debug.Log ("Location service disabled");
 			return false;
@@ -546,42 +505,24 @@ public class NativeToolkit : MonoBehaviour {
 		}
 
 		return true;
-
-		#endif
 	}
 
 	public static float GetLongitude()
 	{
-		#if UNITY_WINRT
-
-		return NativeToolkitWP8.Main.GetLongitude();
-		
-		#else
-
-		if (!Input.location.isEnabledByUser)
+		if(!Input.location.isEnabledByUser)
 			return 0;
 
 		LocationInfo li = Input.location.lastData;
 		return li.longitude;
-
-		#endif
 	}
 	
 	public static float GetLatitude()
 	{
-		#if UNITY_WINRT
-
-		return NativeToolkitWP8.Main.GetLatitude();
-		
-		#else
-
-		if (!Input.location.isEnabledByUser)
+		if(!Input.location.isEnabledByUser)
 			return 0;
 	
 		LocationInfo li = Input.location.lastData;
 		return li.latitude;
-
-		#endif
 	}
 
 	public static string GetCountryCode()
