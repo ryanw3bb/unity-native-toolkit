@@ -20,6 +20,7 @@ public void OnSaveScreenshotPress()
 }
 ```
 For iOS builds make sure you have Scripting Backend set to IL2CPP and Architecture set to Universal in Unity Build Settings.
+
 For Android builds Write Access needs to be set to External (SDCard) to allow saving of images.
 
 ## Documentation
