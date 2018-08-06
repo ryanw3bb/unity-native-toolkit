@@ -8,42 +8,39 @@ using System.Collections.Generic;
 public class PostProcessor 
 {
     [PostProcessBuild]
-	public static void OnPostProcessBuild(BuildTarget target, string path)
-	{
-		#if UNITY_IPHONE
+    public static void OnPostProcessBuild(BuildTarget target, string path)
+    {
+        #if UNITY_IPHONE
 		
         if(target != BuildTarget.iOS) { return; }
 
-
         // tells Xcode to automatically @include frameworks
 
-		string pbxproj = path + "/Unity-iPhone.xcodeproj/project.pbxproj";
+        string pbxproj = path + "/Unity-iPhone.xcodeproj/project.pbxproj";
+        string insertKeyword = "buildSettings = {";
+        string foundKeyword = "CLANG_ENABLE_MODULES";
+        string modulesFlag = "				CLANG_ENABLE_MODULES = YES;";
 
-		string insertKeyword = "buildSettings = {";
-		string foundKeyword = "CLANG_ENABLE_MODULES";
-		string modulesFlag = "				CLANG_ENABLE_MODULES = YES;";
-
-		List<string> lines = new List<string>();
-			
-		foreach(string str in File.ReadAllLines(pbxproj)) 
+        List<string> lines = new List<string>();
+		
+        foreach(string str in File.ReadAllLines(pbxproj)) 
         {
-			if(!str.Contains(foundKeyword)) 
+            if(!str.Contains(foundKeyword)) 
             { 
-				lines.Add(str);
-			}
-			if(str.Contains(insertKeyword))
+                lines.Add(str);
+            }
+            if(str.Contains(insertKeyword))
             {
-				lines.Add(modulesFlag);
-			}
-		}
-	
-		using(File.Create(pbxproj)) {}
+                lines.Add(modulesFlag);
+            }
+        }
 
-		foreach(string str in lines) 
+        using(File.Create(pbxproj)) {}
+
+        foreach(string str in lines) 
         {
-			File.AppendAllText(pbxproj, str + Environment.NewLine);
-		}
-
+            File.AppendAllText(pbxproj, str + Environment.NewLine);
+        }
 
         // add necessary permissions to Plist
 
@@ -62,6 +59,6 @@ public class PostProcessor
 
         File.WriteAllText(plistPath, plist.WriteToString());
 
-		#endif
-	}	
+        #endif
+    }	
 }
