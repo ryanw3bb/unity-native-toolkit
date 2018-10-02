@@ -9,7 +9,7 @@ Easily integrate native iOS & Android functionality into Unity projects.
 * Alert dialogs
 * App rating
 * Local notifications
-* GPS data (returned as double)
+* GPS data (lat/long as double)
 
 ## Usage
 Add the files contained in Unity/Assets/ to your project then call the required static function from your code. For instance:
