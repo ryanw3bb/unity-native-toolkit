@@ -9,12 +9,13 @@ import com.unity3d.player.UnityPlayerNativeActivity;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.location.LocationManager;
 import android.media.ExifInterface;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
 public class Main extends UnityPlayerNativeActivity {
-	
+
 	public static int addImageToGallery(String path) 
 	{
 		Log.w("Native Toolkit", "Add image to gallery");
@@ -149,6 +150,24 @@ public class Main extends UnityPlayerNativeActivity {
 		
 		Locale locale = Locale.getDefault();
 		return locale.getCountry();
+	}
+
+	public static void startLocation()
+	{
+		Log.w("Native Toolkit", "Start Location");
+
+		Location location = new Location();
+		location.init(getUnityActivity());
+	}
+
+	public static double getLatitude()
+	{
+		return Location.LastLocation.getLatitude();
+	}
+
+	public static double getLongitude()
+	{
+		return Location.LastLocation.getLongitude();
 	}
 	
 	public static void scheduleLocalNotification(String title, String message, int id, int delay, String sound, 

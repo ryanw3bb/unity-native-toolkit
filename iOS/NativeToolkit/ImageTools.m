@@ -8,6 +8,7 @@
 
 #import "ImageTools.h"
 #import "StringTools.h"
+#include "Unity/UnityInterface.h"
 
 extern UIViewController *UnityGetGLViewController();
 

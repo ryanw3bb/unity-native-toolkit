@@ -9,7 +9,7 @@ Easily integrate native iOS & Android functionality into Unity projects.
 * Alert dialogs
 * App rating
 * Local notifications
-* GPS data
+* GPS data (returned as double)
 
 ## Usage
 Add the files contained in Unity/Assets/ to your project then call the required static function from your code. For instance:
@@ -28,4 +28,6 @@ Detailed API documentation can be found here:
 http://secondfury.com/nativetoolkit/
 
 Android (Java) source located in Android/app/src/main/java/  
-iOS (Obj-C) source located in Unity/Assets/Plugins/iOS/
+iOS (Obj-C) source located in iOS/NativeToolkit/
+
+If rebuilding the iOS library be sure to add the location of UnityAppController.h to Xcode header paths, it's normally located in a subfolder of the Unity install directory.

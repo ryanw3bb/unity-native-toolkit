@@ -7,6 +7,7 @@
 //
 
 #include "Camera.h"
+#include "Unity/UnityInterface.h"
 
 extern UIViewController *UnityGetGLViewController();
 

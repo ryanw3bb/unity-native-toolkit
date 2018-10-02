@@ -6,6 +6,7 @@
 //
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
 @interface Rate : UIViewController<UIAlertViewDelegate>

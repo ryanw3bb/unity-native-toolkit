@@ -25,7 +25,7 @@ bool launchedFromNotification = false;
         NSLog(@"didFinishLaunchingWithOptions: Not from notification");
     }
     
-    [super application:application didFinishLaunchingWithOptions:launchOptions];
+    return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
 -(void)application:(UIApplication*)application didReceiveLocalNotification:(UILocalNotification *)notification
@@ -96,7 +96,7 @@ extern "C"
         UIApplication* app = [UIApplication sharedApplication];
         NSArray* eventArray = [app scheduledLocalNotifications];
         
-        NSLog(@"###### number of pending local notifications : %@", [eventArray count]);
+        NSLog(@"###### number of pending local notifications : %lu", [eventArray count]);
         
         for (int i=0; i<[eventArray count]; i++)
         {

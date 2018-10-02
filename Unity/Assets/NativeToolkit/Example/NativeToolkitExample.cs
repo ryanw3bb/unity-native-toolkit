@@ -1,8 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
 
 public class NativeToolkitExample : MonoBehaviour {
 
@@ -13,9 +10,9 @@ public class NativeToolkitExample : MonoBehaviour {
 
 	void Start()
 	{
-		console.text += "\nLocation enabled: " + NativeToolkit.StartLocation();
-		console.text += "\nDevice country: " + NativeToolkit.GetCountryCode();
-		console.text += "\nLaunched from notification: " + NativeToolkit.WasLaunchedFromNotification();
+        console.text += "\nLocation enabled: " + NativeToolkit.StartLocation();
+        console.text += "\nDevice country: " + NativeToolkit.GetCountryCode();
+        console.text += "\nLaunched from notification: " + NativeToolkit.WasLaunchedFromNotification();
 	}
 	
 	void OnEnable ()

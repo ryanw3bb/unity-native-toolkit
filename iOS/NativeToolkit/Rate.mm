@@ -8,6 +8,7 @@
 
 #include "Rate.h"
 #include "StringTools.h"
+#include "Unity/UnityInterface.h"
 
 @implementation Rate
 

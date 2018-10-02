@@ -66,18 +66,27 @@ public class NativeToolkit : MonoBehaviour {
 	[DllImport("__Internal")]
 	private static extern void showAlert(string title, string message, string confirmBtnText);
 
-	#elif UNITY_ANDROID
+    [DllImport("__Internal")]
+    private static extern void startLocation();
+
+    [DllImport("__Internal")]
+    private static extern double getLongitude();
+
+    [DllImport("__Internal")]
+    private static extern double getLatitude();
+
+#elif UNITY_ANDROID
 
 	static AndroidJavaClass obj;
 
-	#endif
+#endif
 
 
-	//=============================================================================
-	// Init singleton
-	//=============================================================================
+    //=============================================================================
+    // Init singleton
+    //=============================================================================
 
-	public static NativeToolkit Instance 
+    public static NativeToolkit Instance 
 	{
 		get {
 			if(instance == null)
@@ -492,38 +501,88 @@ public class NativeToolkit : MonoBehaviour {
 
 	public static bool StartLocation()
 	{
-		if(!Input.location.isEnabledByUser)
+        Instance.Awake();
+
+        if(!Input.location.isEnabledByUser)
 		{
 			Debug.Log ("Location service disabled");
 			return false;
 		}
-		
-		if(Input.location.status != LocationServiceStatus.Running)
-		{
-			Debug.Log ("Start location service");
-			Input.location.Start (10.0f,1.0f);
-		}
 
-		return true;
+        #if UNITY_IOS
+
+        if(Application.platform == RuntimePlatform.IPhonePlayer)
+        {
+            startLocation();
+        }
+
+        #elif UNITY_ANDROID
+        
+        if(Application.platform == RuntimePlatform.Android)
+        {
+            obj.CallStatic("startLocation");
+        }
+        
+        #endif
+
+        return true;
 	}
 
-	public static float GetLongitude()
+	public static double GetLongitude()
 	{
-		if(!Input.location.isEnabledByUser)
-			return 0;
+        Instance.Awake();
 
-		LocationInfo li = Input.location.lastData;
-		return li.longitude;
+        if(!Input.location.isEnabledByUser)
+        {
+            return 0;
+        }
+
+        #if UNITY_IOS
+
+        if(Application.platform == RuntimePlatform.IPhonePlayer)
+        {
+            return getLongitude();
+        }
+
+        #elif UNITY_ANDROID
+
+        if(Application.platform == RuntimePlatform.Android)
+        {
+            return obj.CallStatic<double>("getLongitude");
+        }
+        
+        #endif
+
+        return 0;
 	}
 	
-	public static float GetLatitude()
+	public static double GetLatitude()
 	{
-		if(!Input.location.isEnabledByUser)
-			return 0;
-	
-		LocationInfo li = Input.location.lastData;
-		return li.latitude;
-	}
+        Instance.Awake();
+
+        if(!Input.location.isEnabledByUser)
+        {
+            return 0;
+        }
+
+        #if UNITY_IOS
+
+        if(Application.platform == RuntimePlatform.IPhonePlayer)
+        {
+            return getLatitude();
+        }
+
+        #elif UNITY_ANDROID
+
+        if(Application.platform == RuntimePlatform.Android)
+        {
+            return obj.CallStatic<double>("getLatitude");
+        }
+        
+        #endif
+
+        return 0;
+    }
 
 	public static string GetCountryCode()
 	{

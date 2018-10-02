@@ -6,8 +6,9 @@
 //
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import <UnityAppController.h>
+#import "UnityAppController.h"
 
 @interface LocalNotifications : UnityAppController
 

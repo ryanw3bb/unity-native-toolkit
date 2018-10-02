@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		941AD95D2162354A00D4C7D2 /* Rate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 941AD94A2162354900D4C7D2 /* Rate.mm */; };
+		941AD95E2162354A00D4C7D2 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 941AD94C2162354900D4C7D2 /* Contacts.m */; };
+		941AD95F2162354A00D4C7D2 /* Dialog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 941AD94D2162354900D4C7D2 /* Dialog.mm */; };
+		941AD9602162354A00D4C7D2 /* Locale.mm in Sources */ = {isa = PBXBuildFile; fileRef = 941AD94E2162354900D4C7D2 /* Locale.mm */; };
+		941AD9612162354A00D4C7D2 /* Camera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 941AD9552162354900D4C7D2 /* Camera.mm */; };
+		941AD9622162354A00D4C7D2 /* StringTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 941AD9572162354900D4C7D2 /* StringTools.mm */; };
+		941AD9632162354A00D4C7D2 /* Email.m in Sources */ = {isa = PBXBuildFile; fileRef = 941AD9582162354900D4C7D2 /* Email.m */; };
+		941AD9642162354A00D4C7D2 /* ImageTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 941AD95B2162354A00D4C7D2 /* ImageTools.m */; };
+		941AD9652162354A00D4C7D2 /* LocalNotifications.mm in Sources */ = {isa = PBXBuildFile; fileRef = 941AD95C2162354A00D4C7D2 /* LocalNotifications.mm */; };
+		941AD97121625D7700D4C7D2 /* libNativeToolkit.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 94D2981F216234BF00F06A1C /* libNativeToolkit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		941AD97021625D7500D4C7D2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "$(PROJECT_DIR)/../Unity/Assets/Plugins/iOS";
+			dstSubfolderSpec = 0;
+			files = (
+				941AD97121625D7700D4C7D2 /* libNativeToolkit.a in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		941AD94A2162354900D4C7D2 /* Rate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Rate.mm; sourceTree = "<group>"; };
+		941AD94B2162354900D4C7D2 /* Contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
+		941AD94C2162354900D4C7D2 /* Contacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacts.m; sourceTree = "<group>"; };
+		941AD94D2162354900D4C7D2 /* Dialog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Dialog.mm; sourceTree = "<group>"; };
+		941AD94E2162354900D4C7D2 /* Locale.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Locale.mm; sourceTree = "<group>"; };
+		941AD94F2162354900D4C7D2 /* StringTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringTools.h; sourceTree = "<group>"; };
+		941AD9512162354900D4C7D2 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		941AD9522162354900D4C7D2 /* Locale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Locale.h; sourceTree = "<group>"; };
+		941AD9532162354900D4C7D2 /* Dialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dialog.h; sourceTree = "<group>"; };
+		941AD9542162354900D4C7D2 /* Email.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Email.h; sourceTree = "<group>"; };
+		941AD9552162354900D4C7D2 /* Camera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Camera.mm; sourceTree = "<group>"; };
+		941AD9562162354900D4C7D2 /* Rate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rate.h; sourceTree = "<group>"; };
+		941AD9572162354900D4C7D2 /* StringTools.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StringTools.mm; sourceTree = "<group>"; };
+		941AD9582162354900D4C7D2 /* Email.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Email.m; sourceTree = "<group>"; };
+		941AD9592162354900D4C7D2 /* ImageTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTools.h; sourceTree = "<group>"; };
+		941AD95A2162354900D4C7D2 /* LocalNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotifications.h; sourceTree = "<group>"; };
+		941AD95B2162354A00D4C7D2 /* ImageTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTools.m; sourceTree = "<group>"; };
+		941AD95C2162354A00D4C7D2 /* LocalNotifications.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LocalNotifications.mm; sourceTree = "<group>"; };
+		94D2981F216234BF00F06A1C /* libNativeToolkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNativeToolkit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94D2981C216234BF00F06A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94D29816216234BF00F06A1C = {
+			isa = PBXGroup;
+			children = (
+				94D29821216234BF00F06A1C /* NativeToolkit */,
+				94D29820216234BF00F06A1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94D29820216234BF00F06A1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94D2981F216234BF00F06A1C /* libNativeToolkit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94D29821216234BF00F06A1C /* NativeToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				941AD9512162354900D4C7D2 /* Camera.h */,
+				941AD9552162354900D4C7D2 /* Camera.mm */,
+				941AD94B2162354900D4C7D2 /* Contacts.h */,
+				941AD94C2162354900D4C7D2 /* Contacts.m */,
+				941AD9532162354900D4C7D2 /* Dialog.h */,
+				941AD94D2162354900D4C7D2 /* Dialog.mm */,
+				941AD9542162354900D4C7D2 /* Email.h */,
+				941AD9582162354900D4C7D2 /* Email.m */,
+				941AD9592162354900D4C7D2 /* ImageTools.h */,
+				941AD95B2162354A00D4C7D2 /* ImageTools.m */,
+				941AD9522162354900D4C7D2 /* Locale.h */,
+				941AD94E2162354900D4C7D2 /* Locale.mm */,
+				941AD95A2162354900D4C7D2 /* LocalNotifications.h */,
+				941AD95C2162354A00D4C7D2 /* LocalNotifications.mm */,
+				941AD9562162354900D4C7D2 /* Rate.h */,
+				941AD94A2162354900D4C7D2 /* Rate.mm */,
+				941AD94F2162354900D4C7D2 /* StringTools.h */,
+				941AD9572162354900D4C7D2 /* StringTools.mm */,
+			);
+			path = NativeToolkit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94D2981E216234BF00F06A1C /* NativeToolkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D29828216234BF00F06A1C /* Build configuration list for PBXNativeTarget "NativeToolkit" */;
+			buildPhases = (
+				94D2981B216234BF00F06A1C /* Sources */,
+				94D2981C216234BF00F06A1C /* Frameworks */,
+				941AD97021625D7500D4C7D2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NativeToolkit;
+			productName = NativeToolkit;
+			productReference = 94D2981F216234BF00F06A1C /* libNativeToolkit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94D29817216234BF00F06A1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Second Fury";
+				TargetAttributes = {
+					94D2981E216234BF00F06A1C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 94D2981A216234BF00F06A1C /* Build configuration list for PBXProject "NativeToolkit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 94D29816216234BF00F06A1C;
+			productRefGroup = 94D29820216234BF00F06A1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94D2981E216234BF00F06A1C /* NativeToolkit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94D2981B216234BF00F06A1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941AD95F2162354A00D4C7D2 /* Dialog.mm in Sources */,
+				941AD9652162354A00D4C7D2 /* LocalNotifications.mm in Sources */,
+				941AD9632162354A00D4C7D2 /* Email.m in Sources */,
+				941AD9612162354A00D4C7D2 /* Camera.mm in Sources */,
+				941AD9602162354A00D4C7D2 /* Locale.mm in Sources */,
+				941AD9622162354A00D4C7D2 /* StringTools.mm in Sources */,
+				941AD9642162354A00D4C7D2 /* ImageTools.m in Sources */,
+				941AD95D2162354A00D4C7D2 /* Rate.mm in Sources */,
+				941AD95E2162354A00D4C7D2 /* Contacts.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		94D29826216234BF00F06A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.1.5f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LIBRARY_SEARCH_PATHS = "";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		94D29827216234BF00F06A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.1.5f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LIBRARY_SEARCH_PATHS = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		94D29829216234BF00F06A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PGZ96AS42;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.1.5f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		94D2982A216234BF00F06A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PGZ96AS42;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.1.5f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94D2981A216234BF00F06A1C /* Build configuration list for PBXProject "NativeToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D29826216234BF00F06A1C /* Debug */,
+				94D29827216234BF00F06A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94D29828216234BF00F06A1C /* Build configuration list for PBXNativeTarget "NativeToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D29829216234BF00F06A1C /* Debug */,
+				94D2982A216234BF00F06A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94D29817216234BF00F06A1C /* Project object */;
+}

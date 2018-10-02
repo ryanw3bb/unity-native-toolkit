@@ -8,6 +8,7 @@
 
 #import "Email.h"
 #import "StringTools.h"
+
 extern UIViewController *UnityGetGLViewController();
 
 @implementation Email

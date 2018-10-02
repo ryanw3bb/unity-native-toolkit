@@ -8,6 +8,7 @@
 
 #import "Dialog.h"
 #import "StringTools.h"
+#include "Unity/UnityInterface.h"
 
 @implementation Dialog
 

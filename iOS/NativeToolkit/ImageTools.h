@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
 @interface ImageTools : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
