@@ -1,6 +1,8 @@
 using UnityEditor;
 using UnityEditor.Callbacks;
+#if UNITY_IPHONE
 using UnityEditor.iOS.Xcode;
+#endif
 using System;
 using System.IO;
 using System.Collections.Generic;
@@ -10,7 +12,7 @@ public class PostProcessor
     [PostProcessBuild]
     public static void OnPostProcessBuild(BuildTarget target, string path)
     {
-        #if UNITY_IPHONE
+#if UNITY_IPHONE
 		
         if(target != BuildTarget.iOS) { return; }
 
@@ -59,6 +61,6 @@ public class PostProcessor
 
         File.WriteAllText(plistPath, plist.WriteToString());
 
-        #endif
+#endif
     }	
 }

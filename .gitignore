@@ -13,6 +13,7 @@ Assets/HQDemo/
 .vs/
 Resources/
 Packages/
+Unity/Assets/AssetStoreTools/
 
 # file extensions
 *.csproj
