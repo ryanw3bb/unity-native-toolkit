@@ -21,11 +21,14 @@ public void OnSaveScreenshotPress()
 ```
 For iOS builds make sure you have Scripting Backend set to IL2CPP and Architecture set to Universal in Unity Build Settings.
 
-For Android builds Write Access needs to be set to External (SDCard) to allow saving of images.
+For Android builds Write Access needs to be set to External (SDCard) to allow saving of images, and Build System set to Gradle.
 
 ## Documentation
 Detailed API documentation can be found here:
 http://secondfury.com/nativetoolkit/
+
+# Notes
+The example project was built using Unity 2018.2.11f1 and the libraries using Android Studio 3.1.3 and Xcode 10.1.
 
 Android (Java) source located in Android/app/src/main/java/  
 iOS (Obj-C) source located in iOS/NativeToolkit/
