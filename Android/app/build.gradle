@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         minSdkVersion 9
-        targetSdkVersion 26
+        targetSdkVersion 27
     }
 
     buildTypes {
@@ -29,6 +29,7 @@ android {
 }
 
 dependencies {
-    compileOnly 'com.android.support:support-v4:26.1.0'
+    compileOnly 'com.android.support:support-v4:27.1.1'
+    compileOnly 'com.android.support:support-compat:27.1.1'
     compileOnly files('libs/classes.jar')
 }

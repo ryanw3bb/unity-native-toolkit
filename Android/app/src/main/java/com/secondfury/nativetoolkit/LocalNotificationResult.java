@@ -1,8 +1,7 @@
 package com.secondfury.nativetoolkit;
 
 import com.unity3d.player.UnityPlayer;
-import com.unity3d.player.UnityPlayerNativeActivity;
-//import com.prime31.UnityPlayerNativeActivity;
+import com.unity3d.player.UnityPlayerActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -16,7 +15,7 @@ public class LocalNotificationResult extends Activity {
 	{
 		Log.w("Native Toolkit", "This is a notification result!");
 		
-		Intent intent = new Intent(this, UnityPlayerNativeActivity.class);
+		Intent intent = new Intent(this, UnityPlayerActivity.class);
 		intent.putExtra("fromNotification", true);
 		startActivity(intent);
 		

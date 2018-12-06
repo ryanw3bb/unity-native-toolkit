@@ -4,17 +4,16 @@ import java.io.IOException;
 import java.util.Locale;
 
 import com.unity3d.player.UnityPlayer;
-import com.unity3d.player.UnityPlayerNativeActivity;
+import com.unity3d.player.UnityPlayerActivity;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.location.LocationManager;
 import android.media.ExifInterface;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-public class Main extends UnityPlayerNativeActivity {
+public class Main extends UnityPlayerActivity {
 
 	public static int addImageToGallery(String path) 
 	{
@@ -32,7 +31,8 @@ public class Main extends UnityPlayerNativeActivity {
 			Intent intent = new Intent(getUnityActivity(), MainActivity.class);
 			intent.putExtra("action", 0);
 			getUnityActivity().startActivity(intent);
-		} catch (Exception e)
+		}
+		catch (Exception e)
 		{
 			UnityPlayer.UnitySendMessage("NativeToolkit", "OnPickImage", "Error");
 			e.printStackTrace();

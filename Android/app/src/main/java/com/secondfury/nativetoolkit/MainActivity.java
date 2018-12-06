@@ -17,6 +17,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.StrictMode;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.provider.ContactsContract.Contacts;
@@ -52,6 +53,16 @@ public class MainActivity extends Activity {
 	    		break;
 	    		
 	        case 1:
+                try
+                {
+                    StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+                    StrictMode.setVmPolicy(builder.build());
+                }
+                catch (Exception e)
+                {
+                    Log.w("Native Toolkit", "Camera Error");
+                }
+
 	        	// take camera shot
     		    imageUri = getOutputMediaFileUri(MEDIA_TYPE_IMAGE);
 	        	Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -99,13 +110,16 @@ public class MainActivity extends Activity {
         {
         	if(data != null)
         	{
-        		try {
+        		try
+				{
 					imageUri = data.getData();
 					String imagePath = FileUtils.getPath(this, imageUri);
 
 					Log.w("Native Toolkit", "Image picked at location : " + imagePath);
 					UnityPlayer.UnitySendMessage("NativeToolkit", "OnPickImage", imagePath);
-				} catch (Exception e) {
+				}
+				catch (Exception e)
+				{
 					UnityPlayer.UnitySendMessage("NativeToolkit", "OnPickImage", "Error");
 				}
         	}

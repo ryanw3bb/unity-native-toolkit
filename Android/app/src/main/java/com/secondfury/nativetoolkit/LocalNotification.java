@@ -3,6 +3,7 @@ package com.secondfury.nativetoolkit;
 import java.util.Calendar;
 
 import android.app.AlarmManager;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -12,15 +13,19 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 public class LocalNotification extends BroadcastReceiver {
-	
-	Context context;
-	
+
+	private Context context;
+
+    private String NOTIFICATION_CHANNEL_ID = "NotificationChannel";
+    private CharSequence NOTIFICATION_CHANNEL_NAME = "MyChannel";
+
 	@Override
 	public void onReceive(Context context, Intent paramIntent) 
 	{
@@ -38,9 +43,22 @@ public class LocalNotification extends BroadcastReceiver {
 		
 		String packageName = context.getPackageName();
 		int smallIconId = context.getResources().getIdentifier(smallIcon, "drawable", packageName);
-		
+
+		NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+
+		if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O)
+		{
+			int importance = NotificationManager.IMPORTANCE_LOW;
+			NotificationChannel  notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, NOTIFICATION_CHANNEL_NAME, importance);
+			notificationChannel.enableLights(true);
+			notificationChannel.setLightColor(Color.BLUE);
+			notificationChannel.enableVibration(true);
+			notificationChannel.setVibrationPattern(new long[]{100, 200, 300, 400, 500, 400, 300, 200, 400});
+			notificationManager.createNotificationChannel(notificationChannel);
+		}
+
 		NotificationCompat.Builder mBuilder =
-			    new NotificationCompat.Builder(this.context)
+			    new NotificationCompat.Builder(this.context, NOTIFICATION_CHANNEL_ID)
 			    .setSmallIcon(smallIconId)
 			    .setContentTitle(title)
 			    .setContentText(message)
@@ -81,9 +99,8 @@ public class LocalNotification extends BroadcastReceiver {
 		PendingIntent resultPendingIntent = PendingIntent.getActivity(context, id, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 		
 		mBuilder.setContentIntent(resultPendingIntent);
-		
-		NotificationManager mNotifyMgr = (NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
-		mNotifyMgr.notify(id, mBuilder.build());
+
+		notificationManager.notify(id, mBuilder.build());
 	}
 	
 	public void scheduleLocalNotification(Context context, int id, String title, String message, int delay, String sound, 
