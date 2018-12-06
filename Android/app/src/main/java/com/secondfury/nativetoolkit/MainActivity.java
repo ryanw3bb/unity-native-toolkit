@@ -99,11 +99,15 @@ public class MainActivity extends Activity {
         {
         	if(data != null)
         	{
-        		imageUri = data.getData();
-        		String imagePath = FileUtils.getPath(this, imageUri);
-                
-            	Log.w("Native Toolkit", "Image picked at location : " + imagePath);
-            	UnityPlayer.UnitySendMessage("NativeToolkit", "OnPickImage", imagePath);
+        		try {
+					imageUri = data.getData();
+					String imagePath = FileUtils.getPath(this, imageUri);
+
+					Log.w("Native Toolkit", "Image picked at location : " + imagePath);
+					UnityPlayer.UnitySendMessage("NativeToolkit", "OnPickImage", imagePath);
+				} catch (Exception e) {
+					UnityPlayer.UnitySendMessage("NativeToolkit", "OnPickImage", "Error");
+				}
         	}
         }
         else if (requestCode == CAPTURE_PHOTO)
