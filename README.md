@@ -27,7 +27,7 @@ For Android builds Write Access needs to be set to External (SDCard) to allow sa
 Detailed API documentation can be found here:
 http://secondfury.com/nativetoolkit/
 
-# Notes
+## Notes
 The example project was built using Unity 2018.2.11f1 and the libraries using Android Studio 3.1.3 and Xcode 10.1.
 
 Android (Java) source located in Android/app/src/main/java/  
