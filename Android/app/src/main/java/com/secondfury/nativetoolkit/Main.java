@@ -27,10 +27,16 @@ public class Main extends UnityPlayerNativeActivity {
 	public static void pickImageFromGallery()
 	{
 		Log.w("Native Toolkit", "Select image from gallery");
-		
-		Intent intent = new Intent(getUnityActivity(), MainActivity.class);
-		intent.putExtra("action", 0);
-        getUnityActivity().startActivity(intent);
+		try
+		{
+			Intent intent = new Intent(getUnityActivity(), MainActivity.class);
+			intent.putExtra("action", 0);
+			getUnityActivity().startActivity(intent);
+		} catch (Exception e)
+		{
+			UnityPlayer.UnitySendMessage("NativeToolkit", "OnPickImage", "Error");
+			e.printStackTrace();
+		}
 	}
 	
 	public static String getImageExifData(String filePath, String tag)
