@@ -1,11 +1,11 @@
+using System;
+using System.IO;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Callbacks;
 #if UNITY_IPHONE
 using UnityEditor.iOS.Xcode;
 #endif
-using System;
-using System.IO;
-using System.Collections.Generic;
 
 public class PostProcessor 
 {
@@ -17,7 +17,6 @@ public class PostProcessor
         if(target != BuildTarget.iOS) { return; }
 
         // tells Xcode to automatically @include frameworks
-
         string pbxproj = path + "/Unity-iPhone.xcodeproj/project.pbxproj";
         string insertKeyword = "buildSettings = {";
         string foundKeyword = "CLANG_ENABLE_MODULES";
@@ -45,7 +44,6 @@ public class PostProcessor
         }
 
         // add necessary permissions to Plist
-
         string plistPath = Path.Combine(path, "Info.plist");
         PlistDocument plist = new PlistDocument();
         plist.ReadFromString(File.ReadAllText(plistPath));
@@ -60,7 +58,6 @@ public class PostProcessor
         rootDict.SetString("NSLocationAlwaysAndWhenInUseUsageDescription", "Requires access to Location");
 
         File.WriteAllText(plistPath, plist.WriteToString());
-
 #endif
     }	
 }
