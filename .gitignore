@@ -14,13 +14,14 @@ Assets/HQDemo/
 Resources/
 Packages/
 Unity/Assets/AssetStoreTools/
+Unity/Assets/AssetStoreTools.meta
 Unity/Assets/NativeToolkit/Readme.pdf
+Unity/Assets/NativeToolkit/Readme.pdf.meta
 
 # file extensions
 *.csproj
 *.userprefs
 *.sln
-*.meta
 *.pidb
 *.unityproj
 
@@ -34,6 +35,3 @@ build/
 captures/
 output.json
 local.properties
-
-# allowed files
-!Unity/Assets/NativeToolkit/Example/Image.png.meta
