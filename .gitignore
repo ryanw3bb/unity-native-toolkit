@@ -34,3 +34,6 @@ build/
 captures/
 output.json
 local.properties
+
+# allowed files
+!Unity/Assets/NativeToolkit/Example/Image.png.meta
