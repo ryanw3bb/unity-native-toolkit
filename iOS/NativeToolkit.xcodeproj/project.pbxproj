@@ -230,11 +230,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.1.5f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
+				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.2.20f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode-marker";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "arm64 armv7 armv7s";
@@ -288,10 +289,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.1.5f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
+				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.2.20f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -302,11 +304,12 @@
 		94D29829216234BF00F06A1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PGZ96AS42;
 				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.1.5f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
+				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.2.20f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -320,12 +323,14 @@
 		94D2982A216234BF00F06A1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PGZ96AS42;
 				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.1.5f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
+				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.2.20f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
 				LIBRARY_SEARCH_PATHS = "";
+				"OTHER_CFLAGS[arch=*]" = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
