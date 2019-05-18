@@ -31,6 +31,4 @@ http://secondfury.com/nativetoolkit/
 The example project was built using Unity 2018.2.20f1 and the libraries using Android Studio 3.1.3 and Xcode 10.1.
 
 Android (Java) source located in Android/app/src/main/java/  
-iOS (Obj-C) source located in iOS/NativeToolkit/
-
-If rebuilding the iOS library be sure to add the location of UnityAppController.h to Xcode header paths, it's normally located in a subfolder of the Unity install directory.
+iOS (Obj-C) source located in Unity/Assets/Plugins/iOS/

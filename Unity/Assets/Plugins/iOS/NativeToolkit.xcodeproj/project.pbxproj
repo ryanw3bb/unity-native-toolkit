@@ -11,12 +11,12 @@
 		941AD95E2162354A00D4C7D2 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 941AD94C2162354900D4C7D2 /* Contacts.m */; };
 		941AD95F2162354A00D4C7D2 /* Dialog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 941AD94D2162354900D4C7D2 /* Dialog.mm */; };
 		941AD9602162354A00D4C7D2 /* Locale.mm in Sources */ = {isa = PBXBuildFile; fileRef = 941AD94E2162354900D4C7D2 /* Locale.mm */; };
-		941AD9612162354A00D4C7D2 /* Camera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 941AD9552162354900D4C7D2 /* Camera.mm */; };
 		941AD9622162354A00D4C7D2 /* StringTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 941AD9572162354900D4C7D2 /* StringTools.mm */; };
 		941AD9632162354A00D4C7D2 /* Email.m in Sources */ = {isa = PBXBuildFile; fileRef = 941AD9582162354900D4C7D2 /* Email.m */; };
-		941AD9642162354A00D4C7D2 /* ImageTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 941AD95B2162354A00D4C7D2 /* ImageTools.m */; };
-		941AD9652162354A00D4C7D2 /* LocalNotifications.mm in Sources */ = {isa = PBXBuildFile; fileRef = 941AD95C2162354A00D4C7D2 /* LocalNotifications.mm */; };
 		941AD97121625D7700D4C7D2 /* libNativeToolkit.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 94D2981F216234BF00F06A1C /* libNativeToolkit.a */; };
+		94466CC22290465F00D46029 /* Camera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94466CBE2290465F00D46029 /* Camera.mm */; };
+		94466CC32290465F00D46029 /* ImageTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 94466CC02290465F00D46029 /* ImageTools.m */; };
+		94466CC62290470000D46029 /* LocalNotifications.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94466CC52290470000D46029 /* LocalNotifications.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,18 +39,18 @@
 		941AD94D2162354900D4C7D2 /* Dialog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Dialog.mm; sourceTree = "<group>"; };
 		941AD94E2162354900D4C7D2 /* Locale.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Locale.mm; sourceTree = "<group>"; };
 		941AD94F2162354900D4C7D2 /* StringTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringTools.h; sourceTree = "<group>"; };
-		941AD9512162354900D4C7D2 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
 		941AD9522162354900D4C7D2 /* Locale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Locale.h; sourceTree = "<group>"; };
 		941AD9532162354900D4C7D2 /* Dialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dialog.h; sourceTree = "<group>"; };
 		941AD9542162354900D4C7D2 /* Email.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Email.h; sourceTree = "<group>"; };
-		941AD9552162354900D4C7D2 /* Camera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Camera.mm; sourceTree = "<group>"; };
 		941AD9562162354900D4C7D2 /* Rate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rate.h; sourceTree = "<group>"; };
 		941AD9572162354900D4C7D2 /* StringTools.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StringTools.mm; sourceTree = "<group>"; };
 		941AD9582162354900D4C7D2 /* Email.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Email.m; sourceTree = "<group>"; };
-		941AD9592162354900D4C7D2 /* ImageTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTools.h; sourceTree = "<group>"; };
-		941AD95A2162354900D4C7D2 /* LocalNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotifications.h; sourceTree = "<group>"; };
-		941AD95B2162354A00D4C7D2 /* ImageTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTools.m; sourceTree = "<group>"; };
-		941AD95C2162354A00D4C7D2 /* LocalNotifications.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LocalNotifications.mm; sourceTree = "<group>"; };
+		94466CBE2290465F00D46029 /* Camera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Camera.mm; sourceTree = "<group>"; };
+		94466CBF2290465F00D46029 /* ImageTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTools.h; sourceTree = "<group>"; };
+		94466CC02290465F00D46029 /* ImageTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTools.m; sourceTree = "<group>"; };
+		94466CC12290465F00D46029 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		94466CC42290470000D46029 /* LocalNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotifications.h; sourceTree = "<group>"; };
+		94466CC52290470000D46029 /* LocalNotifications.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LocalNotifications.mm; sourceTree = "<group>"; };
 		94D2981F216234BF00F06A1C /* libNativeToolkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNativeToolkit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,20 +84,20 @@
 		94D29821216234BF00F06A1C /* NativeToolkit */ = {
 			isa = PBXGroup;
 			children = (
-				941AD9512162354900D4C7D2 /* Camera.h */,
-				941AD9552162354900D4C7D2 /* Camera.mm */,
+				94466CC12290465F00D46029 /* Camera.h */,
+				94466CBE2290465F00D46029 /* Camera.mm */,
 				941AD94B2162354900D4C7D2 /* Contacts.h */,
 				941AD94C2162354900D4C7D2 /* Contacts.m */,
 				941AD9532162354900D4C7D2 /* Dialog.h */,
 				941AD94D2162354900D4C7D2 /* Dialog.mm */,
 				941AD9542162354900D4C7D2 /* Email.h */,
 				941AD9582162354900D4C7D2 /* Email.m */,
-				941AD9592162354900D4C7D2 /* ImageTools.h */,
-				941AD95B2162354A00D4C7D2 /* ImageTools.m */,
+				94466CBF2290465F00D46029 /* ImageTools.h */,
+				94466CC02290465F00D46029 /* ImageTools.m */,
 				941AD9522162354900D4C7D2 /* Locale.h */,
 				941AD94E2162354900D4C7D2 /* Locale.mm */,
-				941AD95A2162354900D4C7D2 /* LocalNotifications.h */,
-				941AD95C2162354A00D4C7D2 /* LocalNotifications.mm */,
+				94466CC42290470000D46029 /* LocalNotifications.h */,
+				94466CC52290470000D46029 /* LocalNotifications.mm */,
 				941AD9562162354900D4C7D2 /* Rate.h */,
 				941AD94A2162354900D4C7D2 /* Rate.mm */,
 				941AD94F2162354900D4C7D2 /* StringTools.h */,
@@ -163,14 +163,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				941AD95F2162354A00D4C7D2 /* Dialog.mm in Sources */,
-				941AD9652162354A00D4C7D2 /* LocalNotifications.mm in Sources */,
 				941AD9632162354A00D4C7D2 /* Email.m in Sources */,
-				941AD9612162354A00D4C7D2 /* Camera.mm in Sources */,
+				94466CC22290465F00D46029 /* Camera.mm in Sources */,
+				94466CC32290465F00D46029 /* ImageTools.m in Sources */,
 				941AD9602162354A00D4C7D2 /* Locale.mm in Sources */,
 				941AD9622162354A00D4C7D2 /* StringTools.mm in Sources */,
-				941AD9642162354A00D4C7D2 /* ImageTools.m in Sources */,
 				941AD95D2162354A00D4C7D2 /* Rate.mm in Sources */,
 				941AD95E2162354A00D4C7D2 /* Contacts.m in Sources */,
+				94466CC62290470000D46029 /* LocalNotifications.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +232,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.2.20f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
@@ -292,7 +292,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.2.20f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = "";
@@ -306,7 +306,11 @@
 		94D29829216234BF00F06A1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					armv7s,
+					armv7,
+					arm64,
+				);
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PGZ96AS42;
@@ -318,26 +322,31 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "arm64 armv7 armv7";
 			};
 			name = Debug;
 		};
 		94D2982A216234BF00F06A1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					armv7s,
+					armv7,
+					arm64,
+				);
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PGZ96AS42;
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = "/Applications/Unity/Hub/Editor/2018.2.20f1/PlaybackEngines/iOSSupport/Trampoline/Classes/**";
 				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
 				"OTHER_CFLAGS[arch=*]" = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "arm64 armv7 armv7";
 			};
 			name = Release;
 		};
