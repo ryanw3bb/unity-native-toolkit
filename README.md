@@ -19,7 +19,7 @@ public void OnSaveScreenshotPress()
 	NativeToolkit.SaveScreenshot("MyScreenshot", "MyScreenshotFolder", "jpeg");
 }
 ```
-For iOS builds make sure you have Scripting Backend set to IL2CPP and Architecture set to Universal in Unity Build Settings. Once you have built an Xcode project, ensure Enable Bitcode is set to NO in Xcode build settings (if you require Bitcode include the raw .h/.mm files in your project instead of the compiled library).
+For iOS builds make sure you have Scripting Backend set to IL2CPP and Architecture set to Universal in Unity Build Settings.
 
 For Android builds Write Access needs to be set to External (SDCard) to allow saving of images, and Build System set to Gradle. A minimum API level of 16 and target API level of 27 was used during testing.
 
