@@ -24,7 +24,7 @@ For iOS builds make sure you have Scripting Backend set to IL2CPP and Architectu
 For Android builds Write Access needs to be set to External (SDCard) to allow saving of images, and Build System set to Gradle. A minimum API level of 16 and target API level of 27 was used during testing.
 
 ## Documentation
-Detailed API documentation can be found [here](http://secondfury.com/nativetoolkit/)
+Detailed API documentation can be found [here](http://secondfury.com/nativetoolkit/).
 
 ## Notes
 The example project was built using Unity 2018.2.20f1 and the libraries using Android Studio 3.1.3 and Xcode 10.1.
