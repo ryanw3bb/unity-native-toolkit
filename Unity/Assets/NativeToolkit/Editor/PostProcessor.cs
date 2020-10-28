@@ -21,7 +21,11 @@ public class PostProcessor
         string file = File.ReadAllText(projPath);
         proj.ReadFromString(file);
 
-        string targetGuid = proj.TargetGuidByName("Unity-iPhone");
+#if UNITY_2019_3_OR_NEWER
+        string targetGuid = proj.GetUnityFrameworkTargetGuid();
+#else
+        string targetGuid = proj.TargetGuidByName(PBXProject.GetUnityTargetName());
+#endif
 
         proj.SetBuildProperty(targetGuid, "CLANG_ENABLE_MODULES", "YES");
         proj.SetBuildProperty(targetGuid, "ENABLE_BITCODE", "NO");
