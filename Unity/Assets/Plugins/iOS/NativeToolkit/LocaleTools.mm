@@ -1,22 +1,22 @@
 //
-//  Locale.m
+//  LocaleTools.m
 //  NativeToolkit
 //
 //  Created by Ryan on 31/01/2015.
 //
 //
 
-#import "Locale.h"
+#import "LocaleTools.h"
 #import "StringTools.h"
 
 double latitude;
 double longitude;
 
-@implementation Locale
+@implementation LocaleTools
 
 CLLocationManager *locationManager;
 
-- (Locale *)init
+- (LocaleTools *)init
 {
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
@@ -42,7 +42,7 @@ CLLocationManager *locationManager;
 
 @end
 
-static Locale* localeDelegate = NULL;
+static LocaleTools* localeDelegate = NULL;
 
 extern "C"
 {
@@ -58,7 +58,7 @@ extern "C"
     
     void startLocation()
     {
-        if(localeDelegate == NULL) localeDelegate = [[Locale alloc] init];
+        if(localeDelegate == NULL) localeDelegate = [[LocaleTools alloc] init];
     }
     
     double getLongitude()

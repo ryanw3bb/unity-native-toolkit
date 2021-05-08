@@ -12,7 +12,7 @@ Easily integrate native iOS & Android functionality into Unity projects.
 * GPS data (lat/long as double)
 
 ## Usage
-Add the files contained in Unity/Assets/ to your project then call the required static function from your code. For instance:
+Add the files contained in Unity/Assets/ to your project then call the required method from your code. For instance:
 ```csharp
 public void OnSaveScreenshotPress()
 {
@@ -27,7 +27,7 @@ For Android builds Write Access needs to be set to External (SDCard) to allow sa
 Detailed API documentation can be found [here](https://ryanwebb.com/nativetoolkit/).
 
 ## Notes
-The example project was built using Unity 2018.2.20f1 and the libraries using Android Studio 3.1.3 and Xcode 10.1.
+The example project was built using Unity 2019.4.0, Android Studio 3.1.3 and Xcode 11.3.1.
 
 Android (Java) source located in Android/app/src/main/java/  
 iOS (Obj-C) source located in Unity/Assets/Plugins/iOS/
