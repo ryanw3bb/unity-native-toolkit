@@ -16,7 +16,7 @@ Add the files contained in Unity/Assets/ to your project then call the required 
 ```csharp
 public void OnSaveScreenshotPress()
 {
-	NativeToolkit.SaveScreenshot("MyScreenshot", "MyScreenshotFolder", "jpeg");
+	NativeToolkit.SaveScreenshot("MyScreenshot", "MyScreenshotFolder");
 }
 ```
 For iOS builds make sure you have Scripting Backend set to IL2CPP and Architecture set to Universal in Unity Build Settings.
